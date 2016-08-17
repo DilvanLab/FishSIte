@@ -1,0 +1,2617 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://bio.icmc.usp.br/ontologies/plancton#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://bio.icmc.usp.br/ontologies/plancton"/>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Tipo_Alimentar"/>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Especime"/>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Nivel_Trofico">
+    <rdfs:label xml:lang="pt">Nível Trófico</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Especies"/>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Reproducao">
+    <rdfs:label xml:lang="pt">Reprodução</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Habitat"/>
+  <owl:Class rdf:about="http://bio.icmc.usp.br/ontologies/plancton#Seletividade"/>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasEspecies">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Especime"/>
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Especies"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasTipoAlimentar">
+    <rdfs:domain rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Especime"/>
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Tipo_Alimentar"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasHabitat">
+    <rdfs:domain rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Especime"/>
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Habitat"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasNivelTrofico">
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Nivel_Trofico"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasSeletividade">
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Seletividade"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasReproducao">
+    <rdfs:range rdf:resource="http://bio.icmc.usp.br/ontologies/plancton#Reproducao"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://bio.icmc.usp.br/ontologies/plancton#hasTamanho">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Testudinella_ahlstromi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Testudinella_ahlstromi">
+        <rdfs:label>Testudinella ahlstromi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Habitat/litoraneo">
+        <rdfs:label>litoraneo</rdfs:label>
+      </rdf:Description>
+    </hasHabitat>
+    <hasNivelTrofico>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro">
+        <rdfs:lable>herbivoro</rdfs:lable>
+      </rdf:Description>
+    </hasNivelTrofico>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C">
+        <rdfs:label>suspensivoro C</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Mesocyclops_ellipticus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Mesocyclops_ellipticus">
+        <rdfs:label>Mesocyclops ellipticus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Habitat/pelagico">
+        <rdfs:label>pelagico</rdfs:label>
+      </rdf:Description>
+    </hasHabitat>
+    <hasNivelTrofico>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G">
+        <rdfs:lable>onivoro G</rdfs:lable>
+      </rdf:Description>
+    </hasNivelTrofico>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial">
+        <rdfs:label>raptorial</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.17</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Diaphanosoma_brevirreme">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Diaphanosoma_brevirreme">
+        <rdfs:label>Diaphanosoma brevirreme</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F">
+        <rdfs:label>suspensivoro F</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.57</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_monostyla">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_monostyla">
+        <rdfs:label>Lecane monostyla</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_angularis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_angularis">
+        <rdfs:label>Brachionus angularis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Daphnia_gessneri">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Daphnia_gessneri">
+        <rdfs:label>Daphnia gessneri</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.52</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ceriodaphnia_silvestrii">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ceriodaphnia_silvestrii">
+        <rdfs:label>Ceriodaphnia silvestrii</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.53</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trichocerca_bicristata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trichocerca_bicristata">
+        <rdfs:label>Trichocerca bicristata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador">
+        <rdfs:label>sugador</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.26</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Conochilus_coenobasis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Conochilus_coenobasis">
+        <rdfs:label>Conochilus coenobasis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_mirus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_mirus">
+        <rdfs:label>Brachionus mirus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Conochilus_natans">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Conochilus_natans">
+        <rdfs:label>Conochilus natans</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_dentata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_dentata">
+        <rdfs:label>Arcella dentata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P">
+        <rdfs:lable>onivoro P</rdfs:lable>
+      </rdf:Description>
+    </hasNivelTrofico>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P">
+        <rdfs:label>fagocitose P</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_achlora">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_achlora">
+        <rdfs:label>Difflugia achlora</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Pompholyx_complanata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Pompholyx_complanata">
+        <rdfs:label>Pompholyx complanata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.08</hasTamanho>
+  </Especime>
+  <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/moderada/moderada">
+    <rdfs:label>moderada</rdfs:label>
+  </rdf:Description>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrochaetus_colinsi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrochaetus_colinsi">
+        <rdfs:label>Macrochaetus colinsi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Mytilina_bicarenata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Mytilina_bicarenata">
+        <rdfs:label>Mytilina bicarenata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_discoides">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_discoides">
+        <rdfs:label>Arcella discoides</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_penardi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_penardi">
+        <rdfs:label>Difflugia penardi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Metacyclops_curtispinosus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Metacyclops_curtispinosus">
+        <rdfs:label>Metacyclops curtispinosus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.73</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Latonopsis_australis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Latonopsis_australis">
+        <rdfs:label>Latonopsis australis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.7</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notoalona_sculpta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notoalona_sculpta">
+        <rdfs:label>Notoalona sculpta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador">
+        <rdfs:label>raspador</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.36</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Rotaria_cf_netpunia">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Rotaria_cf_netpunia">
+        <rdfs:label>Rotaria cf. netpunia</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.29</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Microcyclops_finitimus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Microcyclops_finitimus">
+        <rdfs:label>Microcyclops finitimus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.7</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Thermocyclops_minutus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Thermocyclops_minutus">
+        <rdfs:label>Thermocyclops minutus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.6</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Filinia_pejler">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Filinia_pejler">
+        <rdfs:label>Filinia pejler</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Thermocyclops_decipiens">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Thermocyclops_decipiens">
+        <rdfs:label>Thermocyclops decipiens</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.85</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_litophila">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_litophila">
+        <rdfs:label>Difflugia litophila</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trichocerca_chattoni">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trichocerca_chattoni">
+        <rdfs:label>Trichocerca chattoni</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.29</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Tropocyclops_prasinus_meridionalis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Tropocyclops_prasinus_meridionalis">
+        <rdfs:label>Tropocyclops prasinus meridionalis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_decipiens">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_decipiens">
+        <rdfs:label>Lecane decipiens</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Dunhevedia_odontoplax">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Dunhevedia_odontoplax">
+        <rdfs:label>Dunhevedia odontoplax</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.46</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosmina_tubicen">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosmina_tubicen">
+        <rdfs:label>Bosmina tubicen</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_oblonga">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_oblonga">
+        <rdfs:label>Difflugia oblonga</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Simocephalus_serrulatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Simocephalus_serrulatus">
+        <rdfs:label>Simocephalus serrulatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.75</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrothrix_squamosa">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrothrix_squamosa">
+        <rdfs:label>Macrothrix squamosa</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alonella_clathratula">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alonella_clathratula">
+        <rdfs:label>Alonella clathratula</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notomatta_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notomatta_sp">
+        <rdfs:label>Notomatta sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Centropyxis_marsupiformes">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Centropyxis_marsupiformes">
+        <rdfs:label>Centropyxis marsupiformes</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Centropyxis_discoides">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Centropyxis_discoides">
+        <rdfs:label>Centropyxis discoides</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Keratella_cochlearis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Keratella_cochlearis">
+        <rdfs:label>Keratella cochlearis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_papuana">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_papuana">
+        <rdfs:label>Lecane papuana</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_cf_rotundata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_cf_rotundata">
+        <rdfs:label>Arcella cf. rotundata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_cornuta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_cornuta">
+        <rdfs:label>Lecane cornuta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_corona">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_corona">
+        <rdfs:label>Difflugia corona</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_glabra">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_glabra">
+        <rdfs:label>Alona glabra</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.31</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_quadridentatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_quadridentatus">
+        <rdfs:label>Brachionus quadridentatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Keratella_reducta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Keratella_reducta">
+        <rdfs:label>Keratella reducta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alonella_hamulata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alonella_hamulata">
+        <rdfs:label>Alonella hamulata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.3</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrothrix_cf_superaculeata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrothrix_cf_superaculeata">
+        <rdfs:label>Macrothrix cf. superaculeata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trinema_lineare">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trinema_lineare">
+        <rdfs:label>Trinema lineare</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.05</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Testudinella_mucronata_f_hauerensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Testudinella_mucronata_f_hauerensis">
+        <rdfs:label>Testudinella mucronata f. hauerensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.24</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Plationus_macracanthus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Plationus_macracanthus">
+        <rdfs:label>Plationus macracanthus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.16</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_falcatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_falcatus">
+        <rdfs:label>Brachionus falcatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_dolabratus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_dolabratus">
+        <rdfs:label>Brachionus dolabratus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Conochlilus_unicornis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Conochlilus_unicornis">
+        <rdfs:label>Conochlilus unicornis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alonella_dadayi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alonella_dadayi">
+        <rdfs:label>Alonella dadayi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Karualona_muelleri">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Karualona_muelleri">
+        <rdfs:label>Karualona muelleri</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Diaphanosoma_polyspina">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Diaphanosoma_polyspina">
+        <rdfs:label>Diaphanosoma polyspina</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.63</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Netzelia_tuberculata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Netzelia_tuberculata">
+        <rdfs:label>Netzelia tuberculata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Camptocercus_dadayi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Camptocercus_dadayi">
+        <rdfs:label>Camptocercus dadayi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.55</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Plationus_patulus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Plationus_patulus">
+        <rdfs:label>Plationus patulus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Strombilidium_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Strombilidium_sp">
+        <rdfs:label>Strombilidium sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_C">
+        <rdfs:label>fagocitose C</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Rhacodiaptomus_insolitus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Rhacodiaptomus_insolitus">
+        <rdfs:label>Rhacodiaptomus insolitus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP">
+        <rdfs:label>suspensivoro AP</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.03</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_vulgaris">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_vulgaris">
+        <rdfs:label>Arcella vulgaris</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_spinuliferus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_spinuliferus">
+        <rdfs:label>Notodiaptomus spinuliferus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.56</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_coronatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_coronatus">
+        <rdfs:label>Notodiaptomus coronatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.33</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Microcyclops_ceibaiensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Microcyclops_ceibaiensis">
+        <rdfs:label>Microcyclops ceibaiensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.65</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Sinantherina_semibullata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Sinantherina_semibullata">
+        <rdfs:label>Sinantherina semibullata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Disparalona_hamata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Disparalona_hamata">
+        <rdfs:label>Disparalona hamata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.51</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ephemeroporus_barroisi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ephemeroporus_barroisi">
+        <rdfs:label>Ephemeroporus barroisi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_elsa">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_elsa">
+        <rdfs:label>Lecane elsa</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.16</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Euryalona_orientalis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Euryalona_orientalis">
+        <rdfs:label>Euryalona orientalis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.45</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Anthalona_verrucosa">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Anthalona_verrucosa">
+        <rdfs:label>Anthalona verrucosa</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.3</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Chydorus_eurynotus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Chydorus_eurynotus">
+        <rdfs:label>Chydorus eurynotus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.38</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Cyclopyxis_impressa">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Cyclopyxis_impressa">
+        <rdfs:label>Cyclopyxis impressa</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_ludwigi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_ludwigi">
+        <rdfs:label>Lecane ludwigi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ptygura_libera">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ptygura_libera">
+        <rdfs:label>Ptygura libera</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Dipleuchlanis_propatula">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Dipleuchlanis_propatula">
+        <rdfs:label>Dipleuchlanis propatula</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.3</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Mytilina_macrocera">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Mytilina_macrocera">
+        <rdfs:label>Mytilina macrocera</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_proiecta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_proiecta">
+        <rdfs:label>Lecane proiecta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.12</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Cephalodella_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Cephalodella_sp">
+        <rdfs:label>Cephalodella sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Centropix_aculeata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Centropix_aculeata">
+        <rdfs:label>Centropix aculeata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_henseni">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_henseni">
+        <rdfs:label>Notodiaptomus henseni</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Vorticella_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Vorticella_sp">
+        <rdfs:label>Vorticella sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Nauplios_Calanoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Nauplios_Calanoida">
+        <rdfs:label>Nauplios Calanoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Filinia_longiseta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Filinia_longiseta">
+        <rdfs:label>Filinia longiseta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.16</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Keratella_lenzi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Keratella_lenzi">
+        <rdfs:label>Keratella lenzi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Euglypha_ciliata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Euglypha_ciliata">
+        <rdfs:label>Euglypha ciliata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Diaphanosoma_fluviatile">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Diaphanosoma_fluviatile">
+        <rdfs:label>Diaphanosoma fluviatile</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.57</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Metacyclops_laticornis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Metacyclops_laticornis">
+        <rdfs:label>Metacyclops laticornis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.9</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Harringia_rousselete">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Harringia_rousselete">
+        <rdfs:label>Harringia rousselete</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Diaphanosoma_spinulosum">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Diaphanosoma_spinulosum">
+        <rdfs:label>Diaphanosoma spinulosum</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.64</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Stentor_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Stentor_sp">
+        <rdfs:label>Stentor sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ascomorpha_tundisii">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ascomorpha_tundisii">
+        <rdfs:label>Ascomorpha tundisii</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Moina_minuta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Moina_minuta">
+        <rdfs:label>Moina minuta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.52</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Keratella_americana">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Keratella_americana">
+        <rdfs:label>Keratella americana</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_intermedia">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_intermedia">
+        <rdfs:label>Alona intermedia</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.32</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_lunaris">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_lunaris">
+        <rdfs:label>Lecane lunaris</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.12</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Moina_reticulata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Moina_reticulata">
+        <rdfs:label>Moina reticulata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.55</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_tuberculata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_tuberculata">
+        <rdfs:label>Difflugia tuberculata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Copepoditos_Calanoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Copepoditos_Calanoida">
+        <rdfs:label>Copepoditos Calanoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.49</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bdelloidea">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bdelloidea">
+        <rdfs:label>Bdelloidea</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.18</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Chydorus_parvireticulatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Chydorus_parvireticulatus">
+        <rdfs:label>Chydorus parvireticulatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ploesoma_truncatum">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ploesoma_truncatum">
+        <rdfs:label>Ploesoma truncatum</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Pseudisida_bidentata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Pseudisida_bidentata">
+        <rdfs:label>Pseudisida bidentata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.7</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Diaphanosoma_birgei">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Diaphanosoma_birgei">
+        <rdfs:label>Diaphanosoma birgei</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.61</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_deitersi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_deitersi">
+        <rdfs:label>Notodiaptomus deitersi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.24</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Scapholeberis_armata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Scapholeberis_armata">
+        <rdfs:label>Scapholeberis armata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.6</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosminopsis_deitersi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosminopsis_deitersi">
+        <rdfs:label>Bosminopsis deitersi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.26</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ceriodaphnia_cornuta_righaudi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ceriodaphnia_cornuta_righaudi">
+        <rdfs:label>Ceriodaphnia cornuta righaudi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.35</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trichotria_tetractis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trichotria_tetractis">
+        <rdfs:label>Trichotria tetractis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.18</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosminopsis_negrensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosminopsis_negrensis">
+        <rdfs:label>Bosminopsis negrensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Anuraeopisis_sioli">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Anuraeopisis_sioli">
+        <rdfs:label>Anuraeopisis sioli</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_bulla">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_bulla">
+        <rdfs:label>Lecane bulla</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/baixa/baixa">
+    <rdfs:label>baixa</rdfs:label>
+  </rdf:Description>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_havanaensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_havanaensis">
+        <rdfs:label>Brachionus havanaensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_hemiphaerica">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_hemiphaerica">
+        <rdfs:label>Arcella hemiphaerica</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_depressa">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_depressa">
+        <rdfs:label>Lecane depressa</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.12</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_luna">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_luna">
+        <rdfs:label>Lecane luna</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Filinia_opoliensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Filinia_opoliensis">
+        <rdfs:label>Filinia opoliensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.16</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Cyphoderia_ampulla">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Cyphoderia_ampulla">
+        <rdfs:label>Cyphoderia ampulla</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Synchaeta_stylata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Synchaeta_stylata">
+        <rdfs:label>Synchaeta stylata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.17</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Mesocyclops_meridianus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Mesocyclops_meridianus">
+        <rdfs:label>Mesocyclops meridianus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.04</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ascomorpha_ecaudis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ascomorpha_ecaudis">
+        <rdfs:label>Ascomorpha ecaudis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.01</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Euryalona_brasiliensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Euryalona_brasiliensis">
+        <rdfs:label>Euryalona brasiliensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.45</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Moina_micrura">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Moina_micrura">
+        <rdfs:label>Moina micrura</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.44</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Centropyxis_ecornis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Centropyxis_ecornis">
+        <rdfs:label>Centropyxis ecornis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_kempnyi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_kempnyi">
+        <rdfs:label>Difflugia kempnyi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Moinodaphnia_macleayi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Moinodaphnia_macleayi">
+        <rdfs:label>Moinodaphnia macleayi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.57</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_distenda">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_distenda">
+        <rdfs:label>Difflugia distenda</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.18</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosmina_freyi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosmina_freyi">
+        <rdfs:label>Bosmina freyi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.31</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Anuraeopsis_navicula">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Anuraeopsis_navicula">
+        <rdfs:label>Anuraeopsis navicula</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ephemeroporus_hibridus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ephemeroporus_hibridus">
+        <rdfs:label>Ephemeroporus hibridus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.3</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Parvalona_parva">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Parvalona_parva">
+        <rdfs:label>Parvalona parva</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Dactylodiaptomus_pearsei">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Dactylodiaptomus_pearsei">
+        <rdfs:label>Dactylodiaptomus pearsei</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.61</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Disparalona_leptorhyncha">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Disparalona_leptorhyncha">
+        <rdfs:label>Disparalona leptorhyncha</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Polyarthra_aff_vulgaris">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Polyarthra_aff_vulgaris">
+        <rdfs:label>Polyarthra aff. vulgaris</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.08</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/n‡uplios_Harpacticoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/n‡uplios_Harpacticoida">
+        <rdfs:label>n‡uplios Harpacticoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_acuminata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_acuminata">
+        <rdfs:label>Difflugia acuminata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_limnetica">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_limnetica">
+        <rdfs:label>Difflugia limnetica</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trichocerca_similis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trichocerca_similis">
+        <rdfs:label>Trichocerca similis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Paracyclops_prasinus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Paracyclops_prasinus">
+        <rdfs:label>Paracyclops prasinus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.6</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Nauplios_Cyclopoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Nauplios_Cyclopoida">
+        <rdfs:label>Nauplios Cyclopoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_ossiani">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_ossiani">
+        <rdfs:label>Alona ossiani</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.45</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_lobostoma">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_lobostoma">
+        <rdfs:label>Difflugia lobostoma</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.12</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_costata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_costata">
+        <rdfs:label>Arcella costata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Allocyclops_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Allocyclops_sp">
+        <rdfs:label>Allocyclops sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.6</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Metacyclops_leptonus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Metacyclops_leptonus">
+        <rdfs:label>Metacyclops leptonus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.8</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Copepoditos_Cyclopoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Copepoditos_Cyclopoida">
+        <rdfs:label>Copepoditos Cyclopoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Leydigia_striata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Leydigia_striata">
+        <rdfs:label>Leydigia striata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.63</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Mesocyclops_ogunnus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Mesocyclops_ogunnus">
+        <rdfs:label>Mesocyclops ogunnus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.17</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Asplanchna_sieboldi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Asplanchna_sieboldi">
+        <rdfs:label>Asplanchna sieboldi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_mitrata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_mitrata">
+        <rdfs:label>Arcella mitrata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_iheringula">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_iheringula">
+        <rdfs:label>Alona iheringula</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Thermocyclops_brehmi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Thermocyclops_brehmi">
+        <rdfs:label>Thermocyclops brehmi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.8</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_linus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_linus">
+        <rdfs:label>Notodiaptomus linus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.28</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Tropocyclops_prasinus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Tropocyclops_prasinus">
+        <rdfs:label>Tropocyclops prasinus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Chydorus_pubescens">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Chydorus_pubescens">
+        <rdfs:label>Chydorus pubescens</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.38</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trichocerca_pusilla">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trichocerca_pusilla">
+        <rdfs:label>Trichocerca pusilla</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Testudinella_patina">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Testudinella_patina">
+        <rdfs:label>Testudinella patina</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.24</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrothrix_sioli">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrothrix_sioli">
+        <rdfs:label>Macrothrix sioli</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.38</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Holopedium_amazonicum">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Holopedium_amazonicum">
+        <rdfs:label>Holopedium amazonicum</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.9</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Rhacodiaptomus_calamensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Rhacodiaptomus_calamensis">
+        <rdfs:label>Rhacodiaptomus calamensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ceriodaphnia_cornuta_cornuta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ceriodaphnia_cornuta_cornuta">
+        <rdfs:label>Ceriodaphnia cornuta cornuta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.39</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrocyclops_albidus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrocyclops_albidus">
+        <rdfs:label>Macrocyclops albidus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.65</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Coronatella_monacantha">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Coronatella_monacantha">
+        <rdfs:label>Coronatella monacantha</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.45</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Beauchamphiella_eudactyolata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Beauchamphiella_eudactyolata">
+        <rdfs:label>Beauchamphiella eudactyolata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.3</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Metacyclops_brauni">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Metacyclops_brauni">
+        <rdfs:label>Metacyclops brauni</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.8</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_amazonicus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_amazonicus">
+        <rdfs:label>Notodiaptomus amazonicus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_caudatus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_caudatus">
+        <rdfs:label>Brachionus caudatus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Thermocyclops_tenuis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Thermocyclops_tenuis">
+        <rdfs:label>Thermocyclops tenuis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.8</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/copepoditos_Harpacticoida">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/copepoditos_Harpacticoida">
+        <rdfs:label>copepoditos Harpacticoida</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.44</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Notodiaptomus_coniferoides">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Notodiaptomus_coniferoides">
+        <rdfs:label>Notodiaptomus coniferoides</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_AP"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.47</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Collotheca_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Collotheca_sp">
+        <rdfs:label>Collotheca sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/alta/alta">
+    <rdfs:label>alta</rdfs:label>
+  </rdf:Description>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Acantocyclops_robustus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Acantocyclops_robustus">
+        <rdfs:label>Acantocyclops robustus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_cf_setigera">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_cf_setigera">
+        <rdfs:label>Alona cf. setigera</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.34</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Netzelia_wailesi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Netzelia_wailesi">
+        <rdfs:label>Netzelia wailesi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ilyocryptus_spinifer">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ilyocryptus_spinifer">
+        <rdfs:label>Ilyocryptus spinifer</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.55</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Difflugia_cylindrus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Difflugia_cylindrus">
+        <rdfs:label>Difflugia cylindrus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_calyciflorus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_calyciflorus">
+        <rdfs:label>Brachionus calyciflorus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.24</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Dicranophorus_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Dicranophorus_sp">
+        <rdfs:label>Dicranophorus sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.2</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Argyrodiaptomus_azevedoi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Argyrodiaptomus_azevedoi">
+        <rdfs:label>Argyrodiaptomus azevedoi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro">
+        <rdfs:label>suspensivoro</rdfs:label>
+      </rdf:Description>
+    </hasTipoAlimentar>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >1.63</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_leontina">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_leontina">
+        <rdfs:label>Lecane leontina</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.13</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lesquereusia_spiralis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lesquereusia_spiralis">
+        <rdfs:label>Lesquereusia spiralis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.12</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Microcyclops_anceps_anceps">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Microcyclops_anceps_anceps">
+        <rdfs:label>Microcyclops anceps anceps</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_G"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raptorial"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.65</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Habrotrocha_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Habrotrocha_sp">
+        <rdfs:label>Habrotrocha sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Coronatella_poppei">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Coronatella_poppei">
+        <rdfs:label>Coronatella poppei</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.45</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_bidentata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_bidentata">
+        <rdfs:label>Brachionus bidentata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Platyias_quadricornis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Platyias_quadricornis">
+        <rdfs:label>Platyias quadricornis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.19</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosmina_hagmanni">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosmina_hagmanni">
+        <rdfs:label>Bosmina hagmanni</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.32</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ilyocryptus_verrucosus">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ilyocryptus_verrucosus">
+        <rdfs:label>Ilyocryptus verrucosus</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.5</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Hexarthra_intermedia">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Hexarthra_intermedia">
+        <rdfs:label>Hexarthra intermedia</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Euglypha_denticulata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Euglypha_denticulata">
+        <rdfs:label>Euglypha denticulata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Alona_guttata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Alona_guttata">
+        <rdfs:label>Alona guttata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.33</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Sinantherina_cf_procera">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Sinantherina_cf_procera">
+        <rdfs:label>Sinantherina cf. procera</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_megastoma">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_megastoma">
+        <rdfs:label>Arcella megastoma</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Arcella_brasiliensis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Arcella_brasiliensis">
+        <rdfs:label>Arcella brasiliensis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.11</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Keratella_tropica">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Keratella_tropica">
+        <rdfs:label>Keratella tropica</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Monommata_sp">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Monommata_sp">
+        <rdfs:label>Monommata sp.</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.14</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Sinchaeta_jollyae">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Sinchaeta_jollyae">
+        <rdfs:label>Sinchaeta jollyae</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.17</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Macrothrix_elegans">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Macrothrix_elegans">
+        <rdfs:label>Macrothrix elegans</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/raspador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.4</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Lecane_curvicornis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Lecane_curvicornis">
+        <rdfs:label>Lecane curvicornis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Centropyxis_minuta">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Centropyxis_minuta">
+        <rdfs:label>Centropyxis minuta</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/onivoro_P"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/fagocitose_P"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.15</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Bosminopsis_brandorffi">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Bosminopsis_brandorffi">
+        <rdfs:label>Bosminopsis brandorffi</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_F"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.41</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Ascomorpha_ovalis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Ascomorpha_ovalis">
+        <rdfs:label>Ascomorpha ovalis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/sugador"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.09</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Euchlanis_dilatata">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Euchlanis_dilatata">
+        <rdfs:label>Euchlanis dilatata</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.22</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Trochosphaera_aequatorialis">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Trochosphaera_aequatorialis">
+        <rdfs:label>Trochosphaera aequatorialis</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.29</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Brachionus_zahniseri">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Brachionus_zahniseri">
+        <rdfs:label>Brachionus zahniseri</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/pelagico"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.1</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Phylodina_cf_roseola">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Phylodina_cf_roseola">
+        <rdfs:label>Phylodina cf. roseola</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.18</hasTamanho>
+  </Especime>
+  <Especime rdf:about="http://bio.icmc.usp.br/resource/especime/Testudinella_ohlei">
+    <hasEspecies>
+      <rdf:Description rdf:about="http://bio.icmc.usp.br/resource/Especies/Testudinella_ohlei">
+        <rdfs:label>Testudinella ohlei</rdfs:label>
+      </rdf:Description>
+    </hasEspecies>
+    <hasHabitat rdf:resource="http://bio.icmc.usp.br/resource/Habitat/litoraneo"/>
+    <hasNivelTrofico rdf:resource="http://bio.icmc.usp.br/resource/grupo/trofico/herbivoro"/>
+    <hasTipoAlimentar rdf:resource="http://bio.icmc.usp.br/resource/tipo_alimentacao/suspensivoro_C"/>
+    <hasTamanho rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >0.25</hasTamanho>
+  </Especime>
+</rdf:RDF>
